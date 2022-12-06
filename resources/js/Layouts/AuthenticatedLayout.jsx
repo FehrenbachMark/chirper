@@ -27,6 +27,9 @@ export default function Authenticated({ auth, header, children }) {
                 <NavLink href={route('chirps.index')} active={route().current('chirps.index')}>
                   Chirps
                 </NavLink>
+                <NavLink href={route('tables.index')} active={route().current('tables.index')}>
+                  Table
+                </NavLink>
               </div>
             </div>
 
@@ -100,6 +103,9 @@ export default function Authenticated({ auth, header, children }) {
             </ResponsiveNavLink>
             <ResponsiveNavLink href={route('chirps.index')} active={route().current('chirps.index')}>
               Chirps
+            </ResponsiveNavLink>
+            <ResponsiveNavLink href={route('tables.index')} active={route().current('tables.index')}>
+              tables
             </ResponsiveNavLink>
           </div>
 
